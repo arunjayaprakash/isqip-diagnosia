@@ -1,0 +1,16 @@
+<% include header %>
+
+  <h1><%-title %></h1>
+  <p>Welcome to <%-title %></p>
+  <div style="margin:auto">
+  	<strong>
+		<button type="button"><a href="/add-disease">AddDisease</a></button>
+		
+  	<% if(typeof message !='undefined'){%>
+  	<%= message  %>
+  	<% } %> 
+
+  	</strong>
+  	</div>
+
+<% include footer %>
