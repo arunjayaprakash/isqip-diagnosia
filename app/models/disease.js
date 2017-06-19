@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
 
 var DiseaseSchema = new Schema({
   diseaseName: String,
-  symptomId:Number,
+  diseaseId:Number,
   fatal: Boolean
 			});
 

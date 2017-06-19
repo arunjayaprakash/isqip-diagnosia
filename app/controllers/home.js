@@ -1,7 +1,7 @@
 var express = require('express'),
   router = express.Router(),
   mongoose = require('mongoose'),
-  Symptom = mongoose.model('Symptom');
+  Disease = mongoose.model('Disease');
 
 module.exports = function (app) {
   app.use('/', router);
@@ -22,11 +22,11 @@ router.get('/add-disease',function(req,res){
 
   });
 
-router.post('/add-symptom',function(req,res){
-var sym= new Symptom();
-  sym.symptomName=req.body.sName;
-  sym.symptomId=req.body.sId;
-  sym.save(function(err){ if(err){res.render('index',{title:'Home',message:'error while adding symptom to db'});
+router.post('/add-disease',function(req,res){
+var dis= new Disease();
+  dis.diseaseName=req.body.dName;
+  dis.diseaseId=req.body.dId;
+  dis.save(function(err){ if(err){res.render('index',{title:'Home',message:'error while adding symptom to db'});
   }
   else{
     res.render('index',{
