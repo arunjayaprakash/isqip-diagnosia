@@ -1,0 +1,2 @@
+# Diagnosia
+This was supposed to be a website for diagnosing diseases through given symptoms. This is made in html,css,NodeJS and MongoDB. Project is incomplete because we could not operate 2 databases in MongoDB. If anyone can help us completing this project, you're welcome. Login API is also needed as we're planning to make login option for users. Also planning to add a doctor login option, so that doctors can login to their account and suggest corrections to ourdatabase and also doctors can chat with patients
